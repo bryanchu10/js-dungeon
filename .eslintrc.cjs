@@ -18,7 +18,7 @@ module.exports = {
         map: [
           ['@', './src'],
         ],
-        extensions: ['.js', '.vue'],
+        extensions: ['.js', '.vue', '.ts'],
       },
     },
     'import/core-modules': [
@@ -26,5 +26,6 @@ module.exports = {
       '@vitejs/plugin-vue',
       '@rushstack/eslint-patch/modern-module-resolution',
     ],
+    'import/extensions': { ts: 'ignorePackages' },
   },
 };
